@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POO", "POO\POO.csproj", "{C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "Arrays\Arrays.csproj", "{35CC829F-AD9B-4B2F-B141-DECE46347A9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Herencia", "Herencia\Herencia.csproj", "{67BB86BD-EBCB-4EAE-A35C-D287E71FB713}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Herencia", "Herencia\Herencia.csproj", "{67BB86BD-EBCB-4EAE-A35C-D287E71FB713}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{95CD45BA-BE66-496C-B4A9-D5BDBF560B4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{95CD45BA-BE66-496C-B4A9-D5BDBF560B4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases Abstractas", "Clases Abstractas\Clases Abstractas.csproj", "{C776DCA9-FDEB-4090-B856-4C61010B7BC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{95CD45BA-BE66-496C-B4A9-D5BDBF560B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95CD45BA-BE66-496C-B4A9-D5BDBF560B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95CD45BA-BE66-496C-B4A9-D5BDBF560B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C776DCA9-FDEB-4090-B856-4C61010B7BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C776DCA9-FDEB-4090-B856-4C61010B7BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C776DCA9-FDEB-4090-B856-4C61010B7BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C776DCA9-FDEB-4090-B856-4C61010B7BC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
