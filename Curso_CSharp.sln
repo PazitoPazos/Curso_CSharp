@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bucles", "Bucles\Bucles.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excepciones", "Excepciones\Excepciones.csproj", "{93045FD4-938E-4D8F-B725-911418F8FAE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POO", "POO\POO.csproj", "{C2D936F6-4378-452C-9EDD-C983657A441F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{93045FD4-938E-4D8F-B725-911418F8FAE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93045FD4-938E-4D8F-B725-911418F8FAE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93045FD4-938E-4D8F-B725-911418F8FAE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2D936F6-4378-452C-9EDD-C983657A441F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2D936F6-4378-452C-9EDD-C983657A441F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2D936F6-4378-452C-9EDD-C983657A441F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2D936F6-4378-452C-9EDD-C983657A441F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
