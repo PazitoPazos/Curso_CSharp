@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clases selladas", "Clases s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Properties", "Properties\Properties.csproj", "{07197113-E060-4354-874E-0BD3E034B8CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Struct", "Struct\Struct.csproj", "{0C70FCDA-D9CD-4752-8902-503573CC03D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{07197113-E060-4354-874E-0BD3E034B8CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07197113-E060-4354-874E-0BD3E034B8CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07197113-E060-4354-874E-0BD3E034B8CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C70FCDA-D9CD-4752-8902-503573CC03D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C70FCDA-D9CD-4752-8902-503573CC03D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C70FCDA-D9CD-4752-8902-503573CC03D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C70FCDA-D9CD-4752-8902-503573CC03D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
