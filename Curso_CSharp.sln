@@ -25,13 +25,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clases Abstractas", "Clases
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clases selladas", "Clases selladas\Clases selladas.csproj", "{07DB2FC4-647E-4346-AF11-D56D121429A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Properties", "Properties\Properties.csproj", "{07197113-E060-4354-874E-0BD3E034B8CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Properties", "Properties\Properties.csproj", "{07197113-E060-4354-874E-0BD3E034B8CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Struct", "Struct\Struct.csproj", "{0C70FCDA-D9CD-4752-8902-503573CC03D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Struct", "Struct\Struct.csproj", "{0C70FCDA-D9CD-4752-8902-503573CC03D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enum", "Enum\Enum.csproj", "{7272B5C6-A6B3-4D4F-9469-477B49DF2AA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enum", "Enum\Enum.csproj", "{7272B5C6-A6B3-4D4F-9469-477B49DF2AA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Destructor", "Destructor\Destructor.csproj", "{E8DB2580-6399-45CF-9462-C145BE3A4CA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Destructor", "Destructor\Destructor.csproj", "{E8DB2580-6399-45CF-9462-C145BE3A4CA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genericos", "Genericos\Genericos.csproj", "{2C32C35C-B665-4D97-9560-F178E58359AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{E8DB2580-6399-45CF-9462-C145BE3A4CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8DB2580-6399-45CF-9462-C145BE3A4CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8DB2580-6399-45CF-9462-C145BE3A4CA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C32C35C-B665-4D97-9560-F178E58359AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C32C35C-B665-4D97-9560-F178E58359AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C32C35C-B665-4D97-9560-F178E58359AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C32C35C-B665-4D97-9560-F178E58359AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
