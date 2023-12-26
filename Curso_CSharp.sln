@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genericos", "Genericos\Gene
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colecciones", "Colecciones\Colecciones.csproj", "{253A76C9-E4B8-4171-B1B1-2E1157B6A541}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegados, Predicados y Lambdas", "Delegados, Predicados y Lambdas\Delegados, Predicados y Lambdas.csproj", "{7D885B33-4DD1-4FD8-84BC-519BAF97FE99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{253A76C9-E4B8-4171-B1B1-2E1157B6A541}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{253A76C9-E4B8-4171-B1B1-2E1157B6A541}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{253A76C9-E4B8-4171-B1B1-2E1157B6A541}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D885B33-4DD1-4FD8-84BC-519BAF97FE99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D885B33-4DD1-4FD8-84BC-519BAF97FE99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D885B33-4DD1-4FD8-84BC-519BAF97FE99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D885B33-4DD1-4FD8-84BC-519BAF97FE99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
