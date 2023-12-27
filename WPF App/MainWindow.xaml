@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="Primera interfaz" Height="450" Width="800">
     <StackPanel>
-        <TextBox Width="100" Name="MiCuadro" Margin="180" Text="{Binding ElementName=MiSlider, Path=Value, Mode=TwoWay}"></TextBox>
-        <Slider Width="300" Name="MiSlider" Minimum="0" Maximum="100"></Slider>
+        <Label Content="Nombre" Width="100"></Label>
+        <TextBox Width="100" Height="30" Text="{Binding Path=Nombre, Mode=TwoWay}"></TextBox>
+        <Label Content="Apellido" Width="100"></Label>
+        <TextBox Width="100" Height="30" Text="{Binding Path=Apellido, Mode=TwoWay}"></TextBox>
+        <Label Content="Nombre Completo" Width="100"></Label>
+        <TextBox Width="100" Height="30" Text="{Binding Path=NombreCompleto, Mode=TwoWay}"></TextBox>
     </StackPanel>
 </Window>
