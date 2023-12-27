@@ -16,11 +16,17 @@ namespace WPF_App
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static readonly DependencyProperty MiDependencyProperty = DependencyProperty.Register("MiProperty", typeof(int), typeof(MainWindow));
+
+        public int MiProperty
+        {
+            get { return (int) GetValue(MiDependencyProperty); }
+            set { SetValue(MiDependencyProperty, value); }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
-
-            
         }
     }
 }
