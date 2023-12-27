@@ -33,13 +33,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enum", "Enum\Enum.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Destructor", "Destructor\Destructor.csproj", "{E8DB2580-6399-45CF-9462-C145BE3A4CA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genericos", "Genericos\Genericos.csproj", "{2C32C35C-B665-4D97-9560-F178E58359AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Genericos", "Genericos\Genericos.csproj", "{2C32C35C-B665-4D97-9560-F178E58359AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colecciones", "Colecciones\Colecciones.csproj", "{253A76C9-E4B8-4171-B1B1-2E1157B6A541}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Colecciones", "Colecciones\Colecciones.csproj", "{253A76C9-E4B8-4171-B1B1-2E1157B6A541}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegados, Predicados y Lambdas", "Delegados, Predicados y Lambdas\Delegados, Predicados y Lambdas.csproj", "{7D885B33-4DD1-4FD8-84BC-519BAF97FE99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegados, Predicados y Lambdas", "Delegados, Predicados y Lambdas\Delegados, Predicados y Lambdas.csproj", "{7D885B33-4DD1-4FD8-84BC-519BAF97FE99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expresiones Regulares", "Expresiones Regulares\Expresiones Regulares.csproj", "{DB812F1E-56B4-4317-B8DF-9E132DA5A748}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expresiones Regulares", "Expresiones Regulares\Expresiones Regulares.csproj", "{DB812F1E-56B4-4317-B8DF-9E132DA5A748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF App", "WPF App\WPF App.csproj", "{C1FAEFAA-AD17-4057-B323-637CA50A794D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{DB812F1E-56B4-4317-B8DF-9E132DA5A748}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB812F1E-56B4-4317-B8DF-9E132DA5A748}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB812F1E-56B4-4317-B8DF-9E132DA5A748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1FAEFAA-AD17-4057-B323-637CA50A794D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1FAEFAA-AD17-4057-B323-637CA50A794D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1FAEFAA-AD17-4057-B323-637CA50A794D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1FAEFAA-AD17-4057-B323-637CA50A794D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
