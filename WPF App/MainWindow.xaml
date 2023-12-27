@@ -6,17 +6,8 @@
         xmlns:local="clr-namespace:WPF_App"
         mc:Ignorable="d"
         Title="Primera interfaz" Height="450" Width="800">
-    <Grid>
-        <Button Height="150" Width="300" Content="Click me!" Background="#09f">
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="FontSize" Value="25"></Setter>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
-        </Button>
-    </Grid>
+    <StackPanel>
+        <TextBox Width="100" Name="MiCuadro" Margin="180" Text="{Binding ElementName=MiSlider, Path=Value, Mode=TwoWay}"></TextBox>
+        <Slider Width="300" Name="MiSlider" Minimum="0" Maximum="100"></Slider>
+    </StackPanel>
 </Window>
