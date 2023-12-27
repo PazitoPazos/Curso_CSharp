@@ -7,32 +7,34 @@
         mc:Ignorable="d"
         Title="Primera interfaz" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="120"></RowDefinition>
-        </Grid.RowDefinitions>
-        <ListBox Name="ListaPoblaciones" HorizontalContentAlignment="Stretch">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <Grid Margin="2">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
-                        <TextBlock Grid.Column="0" PreviewMouseDown="TextBlock_PreviewMouseDown" Text="{Binding Poblacion1}"></TextBlock>
-                        <TextBlock Grid.Column="1" PreviewMouseDown="TextBlock_PreviewMouseDown" Text="{Binding Temperatura1}"></TextBlock>
-                        <TextBlock Grid.Column="2" PreviewMouseDown="TextBlock_PreviewMouseDown" Text="{Binding Poblacion2}"></TextBlock>
-                        <TextBlock Grid.Column="3" PreviewMouseDown="TextBlock_PreviewMouseDown" Text="{Binding Temperatura2}"></TextBlock>
-                        <ProgressBar Grid.Column="4" Minimum="0" Maximum="50" Value="{Binding DiferenciaTemp}"></ProgressBar>
-                    </Grid>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+        <StackPanel>
+            <ComboBox Name="Capitales">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding NombreCapital}" FontSize="16"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
 
-        <Button Grid.Row="1" Click="Button_Click">Click Me!</Button>
+        <StackPanel Grid.Column="1" Margin="100">
+            <Label FontSize="16" FontWeight="ExtraBlack" Content="Países"/>
+            <CheckBox Name="TodasC" IsThreeState="True" Checked="TodasC_Checked" Unchecked="TodasC_Unchecked">Agregar Todas</CheckBox>
+
+            <StackPanel Margin="20">
+                <CheckBox Name="Madrid" Checked="IndividualChecked" Unchecked="IndividualNotChecked">Madrid</CheckBox>
+                <CheckBox Name="Bogota" Checked="IndividualChecked" Unchecked="IndividualNotChecked">Bogotá</CheckBox>
+                <CheckBox Name="Lima" Checked="IndividualChecked" Unchecked="IndividualNotChecked">Lima</CheckBox>
+                <CheckBox Name="DF" Checked="IndividualChecked" Unchecked="IndividualNotChecked">DF</CheckBox>
+                <CheckBox Name="Santiago" Checked="IndividualChecked" Unchecked="IndividualNotChecked">Santiago</CheckBox>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>

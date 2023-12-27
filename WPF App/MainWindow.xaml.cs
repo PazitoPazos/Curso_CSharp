@@ -20,50 +20,59 @@ namespace WPF_App
         {
             InitializeComponent();
 
-            List<Poblaciones> ListaPob = [];
-            ListaPob.Add(new Poblaciones() { Poblacion1 = "Madrid", Poblacion2 = "Barcelona", Temperatura1 = 15, Temperatura2 = 17, DiferenciaTemp = 2 });
-            ListaPob.Add(new Poblaciones() { Poblacion1 = "Valencia", Poblacion2 = "Alicante", Temperatura1 = 19, Temperatura2 = 20, DiferenciaTemp = 1 });
-            ListaPob.Add(new Poblaciones() { Poblacion1 = "Málaga", Poblacion2 = "Bilbao", Temperatura1 = 20, Temperatura2 = 7, DiferenciaTemp = 13 });
-            ListaPob.Add(new Poblaciones() { Poblacion1 = "Sevilla", Poblacion2 = "Coruña", Temperatura1 = 22, Temperatura2 = 8, DiferenciaTemp = 14 });
-            ListaPoblaciones.ItemsSource = ListaPob;
+            List<Capital> ListaCapitales = [];
+            ListaCapitales.Add(new Capital { NombreCapital = "Madrid" });
+            ListaCapitales.Add(new Capital { NombreCapital = "Bogotá" });
+            ListaCapitales.Add(new Capital { NombreCapital = "Lima" });
+            ListaCapitales.Add(new Capital { NombreCapital = "DF" });
+            ListaCapitales.Add(new Capital { NombreCapital = "Santiago" });
+            Capitales.ItemsSource = ListaCapitales;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public class Capital
         {
-            if (ListaPoblaciones.SelectedItem != null)
+            public string? NombreCapital { get; set; }
+        }
+
+        private void TodasC_Checked(object sender, RoutedEventArgs e)
+        {
+            Madrid.IsChecked = true;
+            Bogota.IsChecked = true;
+            Lima.IsChecked = true;
+            DF.IsChecked = true;
+            Santiago.IsChecked = true;
+        }
+
+        private void TodasC_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Madrid.IsChecked = false;
+            Bogota.IsChecked = false;
+            Lima.IsChecked = false;
+            DF.IsChecked = false;
+            Santiago.IsChecked = false;
+        }
+
+        private void IndividualChecked(object sender, RoutedEventArgs e)
+        {
+            if (Madrid.IsChecked == true && Bogota.IsChecked == true && Lima.IsChecked == true && DF.IsChecked == true && Santiago.IsChecked == true)
             {
-                MessageBox.Show((ListaPoblaciones.SelectedItem as Poblaciones)?.Poblacion1 + " " +
-                (ListaPoblaciones.SelectedItem as Poblaciones)?.Temperatura1 + "ºC " +
-                (ListaPoblaciones.SelectedItem as Poblaciones)?.Poblacion2 + " " +
-                (ListaPoblaciones.SelectedItem as Poblaciones)?.Temperatura2 + "ºC");
+                TodasC.IsChecked = true;
             } else
             {
-                MessageBox.Show("Selecciona un elemento");
+                TodasC.IsChecked = null;
             }
         }
 
-        private void TextBlock_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        private void IndividualNotChecked(object sender, RoutedEventArgs e)
         {
-            if (ListaPoblaciones.SelectedItem != null)
+            if (Madrid.IsChecked == false && Bogota.IsChecked == false && Lima.IsChecked == false && DF.IsChecked == false && Santiago.IsChecked == false)
             {
-                MessageBox.Show((ListaPoblaciones.SelectedItem as Poblaciones)?.Poblacion1 + " " +
-                (ListaPoblaciones.SelectedItem as Poblaciones)?.Temperatura1 + "ºC " +
-                (ListaPoblaciones.SelectedItem as Poblaciones)?.Poblacion2 + " " +
-                (ListaPoblaciones.SelectedItem as Poblaciones)?.Temperatura2 + "ºC");
-            } else
+                TodasC.IsChecked = false;
+            }
+            else
             {
-                MessageBox.Show("Selecciona un elemento");
+                TodasC.IsChecked = null;
             }
         }
-    }
-
-    public class Poblaciones
-    {
-        public string? Poblacion1 { get; set; }
-        public int Temperatura1 { get; set; }
-        public string? Poblacion2 { get; set; }
-        public int Temperatura2 { get; set; }
-
-        public int DiferenciaTemp {  get; set; }
     }
 }
