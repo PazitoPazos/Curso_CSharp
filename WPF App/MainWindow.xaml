@@ -7,34 +7,41 @@
         mc:Ignorable="d"
         Title="Primera interfaz" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="350"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
 
         <StackPanel>
-            <ComboBox Name="Capitales">
-                <ComboBox.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding NombreCapital}" FontSize="16"></TextBlock>
-                        </StackPanel>
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
-            </ComboBox>
+            <TextBlock Text="SEMÁFORO" FontSize="45" TextAlignment="Center" Foreground="BlueViolet"></TextBlock>
         </StackPanel>
 
-        <StackPanel Grid.Column="1" Margin="100">
-            <Label FontSize="16" FontWeight="ExtraBlack" Content="Países"/>
-            <CheckBox Name="TodasC" IsThreeState="True" Checked="TodasC_Checked" Unchecked="TodasC_Unchecked">Agregar Todas</CheckBox>
+        <StackPanel Grid.Row="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
 
-            <StackPanel Margin="20">
-                <CheckBox Name="Madrid" Checked="IndividualChecked" Unchecked="IndividualNotChecked">Madrid</CheckBox>
-                <CheckBox Name="Bogota" Checked="IndividualChecked" Unchecked="IndividualNotChecked">Bogotá</CheckBox>
-                <CheckBox Name="Lima" Checked="IndividualChecked" Unchecked="IndividualNotChecked">Lima</CheckBox>
-                <CheckBox Name="DF" Checked="IndividualChecked" Unchecked="IndividualNotChecked">DF</CheckBox>
-                <CheckBox Name="Santiago" Checked="IndividualChecked" Unchecked="IndividualNotChecked">Santiago</CheckBox>
-            </StackPanel>
+                <StackPanel Grid.Column="0">
+                    <RadioButton Margin="50 20 100 80" Click="RadioButton_Click">
+                        <TextBlock Text="Rojo"></TextBlock>
+                    </RadioButton>
+                    <RadioButton Margin="50 20 100 80" Click="RadioButton_Click_1">
+                        <TextBlock Text="Ámbar"></TextBlock>
+                    </RadioButton>
+                    <RadioButton Margin="50 20 100 80" Click="RadioButton_Click_2">
+                        <TextBlock Text="Verde"></TextBlock>
+                    </RadioButton>
+                </StackPanel>
+
+                <Grid Grid.Column="1">
+                    <Image Source="E:\Pazos\Documents\Web Developing\dotnet-repos\PrimeraAplicacion\WPF App\semaforo_apagado.png" Height="300" Width="280"/>
+                    <Ellipse Width="70" Height="70" Fill="Red" Margin="165,60,165,215" Name="ERojo" Visibility="Hidden"/>
+                    <Ellipse Width="70" Height="70" Fill="Orange" Margin="165,149,165,126" Name="EAmbar" Visibility="Hidden"/>
+                    <Ellipse Width="70" Height="70" Fill="Green" Margin="165,237,165,38" Name="EVerde" Visibility="Hidden"/>
+                </Grid>
+            </Grid>
         </StackPanel>
     </Grid>
 </Window>

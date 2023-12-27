@@ -19,60 +19,27 @@ namespace WPF_App
         public MainWindow()
         {
             InitializeComponent();
-
-            List<Capital> ListaCapitales = [];
-            ListaCapitales.Add(new Capital { NombreCapital = "Madrid" });
-            ListaCapitales.Add(new Capital { NombreCapital = "Bogotá" });
-            ListaCapitales.Add(new Capital { NombreCapital = "Lima" });
-            ListaCapitales.Add(new Capital { NombreCapital = "DF" });
-            ListaCapitales.Add(new Capital { NombreCapital = "Santiago" });
-            Capitales.ItemsSource = ListaCapitales;
         }
 
-        public class Capital
+        private void RadioButton_Click(object sender, RoutedEventArgs e)
         {
-            public string? NombreCapital { get; set; }
+            ERojo.Visibility = Visibility.Visible;
+            EAmbar.Visibility = Visibility.Hidden;
+            EVerde.Visibility = Visibility.Hidden;
         }
 
-        private void TodasC_Checked(object sender, RoutedEventArgs e)
+        private void RadioButton_Click_1(object sender, RoutedEventArgs e)
         {
-            Madrid.IsChecked = true;
-            Bogota.IsChecked = true;
-            Lima.IsChecked = true;
-            DF.IsChecked = true;
-            Santiago.IsChecked = true;
+            ERojo.Visibility = Visibility.Hidden;
+            EAmbar.Visibility = Visibility.Visible;
+            EVerde.Visibility = Visibility.Hidden;
         }
 
-        private void TodasC_Unchecked(object sender, RoutedEventArgs e)
+        private void RadioButton_Click_2(object sender, RoutedEventArgs e)
         {
-            Madrid.IsChecked = false;
-            Bogota.IsChecked = false;
-            Lima.IsChecked = false;
-            DF.IsChecked = false;
-            Santiago.IsChecked = false;
-        }
-
-        private void IndividualChecked(object sender, RoutedEventArgs e)
-        {
-            if (Madrid.IsChecked == true && Bogota.IsChecked == true && Lima.IsChecked == true && DF.IsChecked == true && Santiago.IsChecked == true)
-            {
-                TodasC.IsChecked = true;
-            } else
-            {
-                TodasC.IsChecked = null;
-            }
-        }
-
-        private void IndividualNotChecked(object sender, RoutedEventArgs e)
-        {
-            if (Madrid.IsChecked == false && Bogota.IsChecked == false && Lima.IsChecked == false && DF.IsChecked == false && Santiago.IsChecked == false)
-            {
-                TodasC.IsChecked = false;
-            }
-            else
-            {
-                TodasC.IsChecked = null;
-            }
+            ERojo.Visibility = Visibility.Hidden;
+            EAmbar.Visibility = Visibility.Hidden;
+            EVerde.Visibility = Visibility.Visible;
         }
     }
 }
