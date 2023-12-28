@@ -26,6 +26,16 @@ namespace WPF_Gestion_Pedidos
     {
         SqlConnection miConexionSql;
 
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            string miConexion = ConfigurationManager.ConnectionStrings["WPF_Gestion_Pedidos.Properties.Settings.GestionPedidosConnectionString"].ConnectionString;
+            miConexionSql = new SqlConnection(miConexion);
+            MuestraClientes();
+            MuestraTodosPedidos();
+        }
+
         private void MuestraClientes()
         {
             try
@@ -138,14 +148,37 @@ namespace WPF_Gestion_Pedidos
             MuestraClientes();
         }
 
-        public MainWindow()
+        private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            InitializeComponent();
+            Actualiza ventanaActualizar = new Actualiza((int) listaClientes.SelectedValue);
+            ventanaActualizar.Show();
 
-            string miConexion = ConfigurationManager.ConnectionStrings["WPF_Gestion_Pedidos.Properties.Settings.GestionPedidosConnectionString"].ConnectionString;
-            miConexionSql = new SqlConnection(miConexion);
+            try
+            {
+                string consulta = "SELECT nombre FROM CLIENTE WHERE Id=@ClId";
+                SqlCommand sqlComando = new SqlCommand(consulta, miConexionSql);
+                SqlDataAdapter miAdaptadorSql = new SqlDataAdapter(sqlComando);
+
+                using (miAdaptadorSql)
+                {
+                    sqlComando.Parameters.AddWithValue("@ClId", listaClientes.SelectedValue);
+                    DataTable clientesTabla = new DataTable();
+                    miAdaptadorSql.Fill(clientesTabla);
+                    ventanaActualizar.cuadroActualiza.Text = clientesTabla.Rows[0]["nombre"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
+            //ventanaActualizar.ShowDialog();
+            //MuestraClientes();
+        }
+
+        private void Window_Activated(object sender, EventArgs e)
+        {
             MuestraClientes();
-            MuestraTodosPedidos();
         }
     }
 }
