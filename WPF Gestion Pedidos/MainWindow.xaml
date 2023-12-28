@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="Clientes" HorizontalAlignment="Left" Margin="82,109,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="listaClientes" Margin="18,140,602,136" SelectionChanged="listaClientes_SelectionChanged"/>
+        <Label Content="Pedidos" HorizontalAlignment="Left" Margin="284,109,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="pedidosCliente" Margin="220,138,400,138"/>
+        <Label Content="Todos Pedidos" HorizontalAlignment="Left" Margin="573,91,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="todosPedidos" Margin="456,122,24,100"/>
     </Grid>
 </Window>
