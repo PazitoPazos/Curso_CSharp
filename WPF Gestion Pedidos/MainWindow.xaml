@@ -7,12 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="Clientes" HorizontalAlignment="Left" Margin="82,109,0,0" VerticalAlignment="Top"/>
-        <ListBox Name="listaClientes" Margin="18,140,602,136" SelectionChanged="listaClientes_SelectionChanged"/>
-        <Label Content="Pedidos" HorizontalAlignment="Left" Margin="284,109,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="pedidosCliente" Margin="220,138,400,138"/>
-        <Label Content="Todos Pedidos" HorizontalAlignment="Left" Margin="573,91,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="todosPedidos" Margin="456,122,24,100"/>
-        <Button Content="Borrar" HorizontalAlignment="Left" Margin="556,349,0,0" VerticalAlignment="Top" Height="35" Width="120" Click="Button_Click"/>
+        <Label Content="Clientes" HorizontalAlignment="Left" Margin="82,39,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="listaClientes" Margin="18,70,602,152" MouseDoubleClick="listaClientes_MouseDoubleClick"/>
+        <Label Content="Pedidos" HorizontalAlignment="Left" Margin="284,39,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="pedidosCliente" Margin="220,70,400,152"/>
+        <Label Content="Todos Pedidos" HorizontalAlignment="Left" Margin="573,39,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="todosPedidos" Margin="456,70,24,152"/>
+        <Button Content="Borrar" HorizontalAlignment="Left" Margin="556,287,0,0" VerticalAlignment="Top" Height="35" Width="120" Click="Button_Click"/>
+        <Button Content="Borrar" HorizontalAlignment="Left" Margin="118,287,0,0" VerticalAlignment="Top" Height="35" Width="80" Click="Button_Click_1"/>
+        <Button Content="Insertar" HorizontalAlignment="Left" Margin="18,287,0,0" VerticalAlignment="Top" Height="35" Width="80" Click="Button_Click_2"/>
+        <TextBox Name="insertaCliente" HorizontalAlignment="Left" Margin="46,336,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="124" Height="17"/>
     </Grid>
 </Window>
