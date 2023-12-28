@@ -64,6 +64,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="GestionPedidosDataSet.cs">
+      <DependentUpon>GestionPedidosDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="GestionPedidosDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
