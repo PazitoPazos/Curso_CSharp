@@ -63,7 +63,7 @@ namespace WPF_Gestion_Pedidos
 
         private void MuestraTodosPedidos()
         {
-            string consulta = "SELECT CONCAT(cCliente, ' ', fechaPedido, ' ', formaPago) AS infoCompleta FROM PEDIDO";
+            string consulta = "SELECT *, CONCAT(cCliente, ' ', fechaPedido, ' ', formaPago) AS infoCompleta FROM PEDIDO";
             SqlDataAdapter miAdaptadorSql = new SqlDataAdapter(consulta, miConexionSql);
 
             using (miAdaptadorSql)
@@ -90,6 +90,18 @@ namespace WPF_Gestion_Pedidos
             string miConexion = ConfigurationManager.ConnectionStrings["WPF_Gestion_Pedidos.Properties.Settings.GestionPedidosConnectionString"].ConnectionString;
             miConexionSql = new SqlConnection(miConexion);
             MuestraClientes();
+            MuestraTodosPedidos();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //MessageBox.Show(todosPedidos.SelectedValue.ToString());
+            string consulta = "DELETE FROM PEDIDO WHERE ID=@PEDIDOID";
+            SqlCommand sqlComando = new SqlCommand(consulta, miConexionSql);
+            miConexionSql.Open();
+            sqlComando.Parameters.AddWithValue("@PEDIDOID", todosPedidos.SelectedValue);
+            sqlComando.ExecuteNonQuery();
+            miConexionSql.Close();
             MuestraTodosPedidos();
         }
     }
