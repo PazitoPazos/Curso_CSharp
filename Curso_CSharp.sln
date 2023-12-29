@@ -45,6 +45,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sintaxis Basica", "Sintaxis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF Gestion Pedidos", "WPF Gestion Pedidos\WPF Gestion Pedidos.csproj", "{532AC325-D134-4FAF-9B91-F1F493EEC2D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{1A386DDF-C1FB-4522-9D2A-8B211B2B6030}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ SQL", "LINQ SQL\LINQ SQL.csproj", "{81B9C7E0-896C-4392-9131-B44A08FA62DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +139,14 @@ Global
 		{532AC325-D134-4FAF-9B91-F1F493EEC2D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{532AC325-D134-4FAF-9B91-F1F493EEC2D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{532AC325-D134-4FAF-9B91-F1F493EEC2D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A386DDF-C1FB-4522-9D2A-8B211B2B6030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A386DDF-C1FB-4522-9D2A-8B211B2B6030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A386DDF-C1FB-4522-9D2A-8B211B2B6030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A386DDF-C1FB-4522-9D2A-8B211B2B6030}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B9C7E0-896C-4392-9131-B44A08FA62DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B9C7E0-896C-4392-9131-B44A08FA62DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B9C7E0-896C-4392-9131-B44A08FA62DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B9C7E0-896C-4392-9131-B44A08FA62DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
